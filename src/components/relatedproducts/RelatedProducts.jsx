@@ -1,7 +1,7 @@
 import React from 'react'
 import "./relatedproducts.css"
 import data_product from "../../assets/frontend assest/data"
-import Item from '../item/item'
+import Item from '../item/Item'
 
 
 const RelatedProducts = () => {
