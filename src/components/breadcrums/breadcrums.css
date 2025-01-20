@@ -1,0 +1,44 @@
+.breadcrums {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    gap: 8px; 
+    color: #5e5e5e;
+    font-size: clamp(12px, 2vw, 16px); 
+    font-weight: 600;
+    margin: 100px 20px;
+    text-transform: capitalize;
+    justify-content: center; 
+    text-align: center; 
+}
+
+.breadcrums img {
+    width: 10px; 
+    height: auto; 
+}
+
+
+@media (max-width: 1024px) { 
+    .breadcrums {
+        margin: 80px 40px; 
+    }
+}
+
+@media (max-width: 768px) { 
+    .breadcrums {
+        margin: 50px 15px; 
+        gap: 6px;
+    }
+}
+
+@media (max-width: 480px) { 
+    .breadcrums {
+        font-size: clamp(10px, 3vw, 14px); 
+        margin: 30px 10px; 
+        gap: 4px; 
+    }
+
+    .breadcrums img {
+        width: 8px; 
+    }
+}

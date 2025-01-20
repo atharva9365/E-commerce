@@ -1,0 +1,82 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px; /* Add padding for better spacing on smaller screens */
+    height: auto; /* Allow dynamic height for varying screen sizes */
+}
+
+.popular h1 {
+    color: #171717;
+    font-size: clamp(24px, 5vw, 50px); /* Use clamp() for responsive font size */
+    font-weight: 600;
+    text-align: center; /* Center-align the text */
+    margin: 0;
+}
+
+.popular hr {
+    width: clamp(150px, 30%, 200px); /* Make the width dynamic */
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+.popular-item {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow items to wrap for smaller screens */
+    justify-content: center; /* Center items on smaller screens */
+    width: 100%; /* Ensure it takes full width of the container */
+    padding: 10px; /* Add padding for spacing */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) { /* Tablets */
+    .popular-item {
+        gap: 20px; /* Reduce gap between items */
+    }
+
+    .popular h1 {
+        font-size: clamp(24px, 4vw, 40px); /* Adjust title size for tablets */
+    }
+}
+
+@media (max-width: 768px) { /* Mobile Devices */
+    .popular {
+        gap: 20px; /* Increase spacing between sections */
+        padding: 10px; /* Reduce padding for smaller devices */
+    }
+
+    .popular-item {
+        margin-top: 30px; /* Adjust spacing for smaller devices */
+        gap: 15px; /* Reduce gap for compact layouts */
+    }
+
+    .popular h1 {
+        font-size: clamp(20px, 4.5vw, 32px); /* Further reduce title size */
+    }
+}
+
+@media (max-width: 480px) { /* Small Mobile Devices */
+    .popular {
+        gap: 15px; /* Compact the overall layout */
+        padding: 10px;
+    }
+
+    .popular h1 {
+        font-size: clamp(18px, 4vw, 28px); /* Smaller font size for small screens */
+    }
+
+    .popular-item {
+        margin-top: 20px;
+        gap: 10px; /* Further reduce gap for smaller screens */
+    }
+
+    .popular hr {
+        width: 100px; /* Narrower separator */
+        height: 4px;
+    }
+}
