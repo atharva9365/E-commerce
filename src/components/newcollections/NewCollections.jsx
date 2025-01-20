@@ -1,7 +1,7 @@
 import React from 'react'
 import "./newcollections.css"
 import new_collection from "../../assets/frontend assest/new_collections"
-import Item from '../item/item'
+import Item from '../item/Item'
 
 
 
