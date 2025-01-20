@@ -1,7 +1,8 @@
 import React from 'react'
 import "./popular.css"
 import data_product from "../../assets/frontend assest/data"
-import Item from '../item/item'
+import Item from '../item/Item'
+
 
 const Popular = () => {
   return (
