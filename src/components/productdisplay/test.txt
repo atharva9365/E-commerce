@@ -87,3 +87,10 @@
 .productdisplay-right-category span{
 font-weight: 600 ;
 }
+
+
+
+
+
+
+{ id, name, image, new_price, old_price }

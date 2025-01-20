@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './item.css';
+import React from 'react'
+import "./item.css"
+import { Link } from 'react-router'
 
 const Item = ({ id, name, image, new_price, old_price }) => {
   return (
@@ -14,7 +14,7 @@ const Item = ({ id, name, image, new_price, old_price }) => {
         <div className='item-price-old'>&#8377;{old_price}</div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Item;
+export default Item
