@@ -11,9 +11,9 @@ import Product from './pages/product/Product';
 import Cart from './pages/cart/Cart';
 import LoginSignup from './pages/loginsignup/LoginSignup';
 import Footer from './components/footer/Footer';
-import mens_banner from "./components/../assets/frontend assest/banner_mens.png"
-import women_banner from "./components/../assets/frontend assest/banner_women.png"
-import kids_baneer from "./components/../assets/frontend assest/banner_kids.png"
+import mens_banner from "./assets/frontend assest/Formals.jpg"
+import women_banner from "./assets/frontend assest/womenbanner.png"
+import kids_baneer from "./assets/frontend assest/banner_kids.png"
 
 
 function App() {
